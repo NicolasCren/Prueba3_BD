@@ -145,6 +145,7 @@ public class Eliminar_pedido extends javax.swing.JFrame {
                     cstmt.setInt(1,id_cliente);
                     cstmt.setInt(2,id_articulo);
                     cstmt.registerOutParameter(3, java.sql.Types.INTEGER);
+                          
                     cstmt.execute();
                     //SE ENCONTRO Y ELIMINO EL REGISTRO
                     if(cstmt.getInt(3)==1){

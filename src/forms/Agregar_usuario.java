@@ -162,7 +162,7 @@ public class Agregar_usuario extends javax.swing.JFrame {
                      limite =Integer.parseInt(jLimite.getText());
                      saldo =Integer.parseInt(jSaldo.getText());
                      
-                     if(limite<3000000){
+                     if(limite<=3000000){
 
                          //CONEXION A LA BASE DE DATOS 
                          Conexion conn= new Conexion();
